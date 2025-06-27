@@ -2,27 +2,27 @@
 
 This repository contains an **Arduino-based SCARA (Selective Compliance Assembly Robot Arm)** with 5 Degrees of Freedom, designed for educational and competitive use. Built from open-source resources, this project has been used as a **prototype** for:
 
-- 🏆 **KRTMI** (Kontes Robot Tematik Indonesia)
-- 🏫 University workshops & demonstrations
-- 📷 Computer vision experiments
+- 🏆 Kontes Robot Tematik Indonesia (KRTMI)
+- 🏫 University workshops & robotics labs
+- 📷 Computer vision and automation demos
 
 ---
 
 ## 🧠 Project Goals
 
-- Develop a functional 5-DOF robotic arm using low-cost, open-source hardware
-- Support learning in mechatronics, embedded programming, and robotics kinematics
-- Create a base platform for automation tasks and vision-integrated robotics
+- Develop a working SCARA-type robotic arm with 5 DOF
+- Introduce students to robotic kinematics, control, and mechatronics
+- Provide a low-cost platform for learning automation and vision-guided tasks
 
 ---
 
 ## 🛠️ Features
 
-- 🎯 5 Degrees of Freedom robotic arm (SCARA-type)
-- 🧠 Controlled via Arduino-compatible microcontroller
-- ⚙️ Manual or semi-automated movement via joystick/buttons
-- 🧩 Compatible with computer vision for object sorting or pick-and-place
-- 🛠️ Modular and 3D-printable structure
+- 🎯 5 Degrees of Freedom robotic arm (servo-driven)
+- 🧠 Arduino-based control with optional joystick or PC interface
+- 🧩 Modular 3D-printed frame
+- 🛠️ Ready for integration with Python/vision systems
+- 🗂️ Clean code and documentation structure
 
 ---
 
@@ -30,49 +30,55 @@ This repository contains an **Arduino-based SCARA (Selective Compliance Assembly
 
 ```bash
 SCARA_5_DOF_Robot/
-├── 3D_Design/               # STL or CAD files for printable arm parts
-├── code/                    # Arduino code for robotic arm control
+├── 3D_Design/               # Printable STL/CAD files
+├── code/                    # Arduino source code
 │   └── scara_control.ino
-├── documentation/           # Reports, kinematic diagrams, project context
-└── README.md
+├── documentation/           # Reports, kinematic diagrams
+└── README.md                # You're here
 ```
 
 ## 🧰 Hardware Components
-| Component               | Description                              |
-| ----------------------- | ---------------------------------------- |
-| Arduino Uno/Nano        | Microcontroller for motor control        |
-| Servo Motors (x5)       | For joint actuation                      |
-| Power Supply (5V–6V)    | External power source for servos         |
-| Joystick Module         | For manual positioning (optional)        |
-| Push Buttons (optional) | For mode switching or recording movement |
-| 3D-Printed Frame        | Arm body components                      |
-| Breadboard & Wires      | For prototyping connections              |
+| Component          | Quantity | Description                        |
+| ------------------ | -------- | ---------------------------------- |
+| Arduino Uno/Nano   | 1        | Main microcontroller               |
+| Servo Motors       | 5        | For each degree of freedom         |
+| Power Supply       | 1        | 5–6V external (not Arduino 5V pin) |
+| Joystick Module    | Optional | Manual control input               |
+| 3D-Printed Parts   | -        | Frame, base, joints                |
+| Breadboard & Wires | -        | Wiring and prototyping             |
 
 ## 🚀 Getting Started
-### 1. Prepare the Hardware
-3D-print all arm components using the files in `3D_Design/`
-Assemble the robotic arm using standard fasteners and servo mounts
-Connect all components according to the circuit diagram (see `documentation/`)
+## 1. Print and Assemble
+- Use files in `3D_Design/files/` to 3D-print components
+- Refer to `images/` or `documentation/` for physical assembly guidance
 
-### 2. Upload the Code
-Open `code/scara_control.ino` in the Arduino IDE
-Select your board and COM port
-Upload the code to your Arduino
+## 2. Flash the Arduino
+- Open `code/scara_control.ino` in Arduino IDE
+- Connect your board via USB
 
-## 📐 Kinematics & Control
-This SCARA arm uses basic forward/inverse kinematics for positioning. You can modify the code to support:
-- Angle-to-position mapping
-- Object tracking (if paired with vision input)
-- Recording & replaying movement sequences
+## 📚 Library Installation Guide
+To ensure proper compilation in Arduino IDE, install the following libraries:
+| Library Name              | Use                            | How to Install                                   |
+| ------------------------- | ------------------------------ | ------------------------------------------------ |
+| `Servo` (by Arduino)      | Controls standard hobby servos | Included by default in Arduino IDE               |
+| `AccelStepper` (optional) | Stepper/trajectory control     | Arduino IDE → Library Manager → Search & Install |
+| `SoftwareSerial`          | If using serial joystick input | Built-in or available via Library Manager        |
+You can install libraries via **Arduino IDE > Tools > Manage Libraries...**, then search for the name and click **Install**.
+
+## 🧮 Kinematics
+- Forward/inverse kinematics logic is applied directly in the Arduino code
+- For advanced motion planning, consider adapting the code with Python or ROS integration
 
 ## 📚 Use Cases
-- 🤖 Robotics education (universities, clubs, and high schools)
-- 🎓 Kinematics and control systems lab demos
+- 💡 STEM & Robotics education
 - 🏁 Robotics competitions (e.g., KRTMI)
-- 🔍 Research in computer vision and automation
+- 🧪 Prototyping for pick-and-place automation
+- 🔍 Computer vision + arm coordination experiments
 
-## 📝 License
-This project is open-source and intended for educational use. Original design files are based on publicly available open hardware models.
+## 📝 License & Attribution
+- Original mechanical design inspired by JJrobots SCARA arm on Thingiverse
+- Electronics, control logic, and documentation developed by this project team
+- Licensed for educational, non-commercial use
 
 ## 📬 Contact
 - GitHub: [@Lunardy2509](https://github.com/Lunardy2509)
