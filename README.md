@@ -1,3 +1,12 @@
+<details>
+<summary>Click to view Documentation Images</summary>
+  
+| | | |
+|---|---|---|
+| ![1](https://github.com/Lunardy2509/SCARA_5_DOF_Robot/blob/main/documentation/IMG_4944.heic) | ![2](https://github.com/Lunardy2509/SCARA_5_DOF_Robot/blob/main/documentation/IMG-20240519-WA0004.jpg) | ![3](https://github.com/Lunardy2509/SCARA_5_DOF_Robot/blob/main/documentation/IMG_5194.HEIC) |
+
+</details>
+
 # 🤖 SCARA 5 DOF Robot Arm
 
 This repository contains an **Arduino-based SCARA (Selective Compliance Assembly Robot Arm)** with 5 Degrees of Freedom, designed for educational and competitive use. Built from open-source resources, this project has been used as a **prototype** for:
