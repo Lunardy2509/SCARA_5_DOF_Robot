@@ -3,7 +3,7 @@
   
 | | | |
 |---|---|---|
-| ![1](https://github.com/Lunardy2509/SCARA_5_DOF_Robot/blob/main/documentation/IMG_4944.heic) | ![2](https://github.com/Lunardy2509/SCARA_5_DOF_Robot/blob/main/documentation/IMG-20240519-WA0004.jpg) | ![3](https://github.com/Lunardy2509/SCARA_5_DOF_Robot/blob/main/documentation/IMG_5194.HEIC) |
+| ![1](https://github.com/Lunardy2509/SCARA_5_DOF_Robot/blob/main/documentation/IMG_4944.jpg) | ![2](https://github.com/Lunardy2509/SCARA_5_DOF_Robot/blob/main/documentation/IMG-20240519-WA0004.jpg) | ![3](https://github.com/Lunardy2509/SCARA_5_DOF_Robot/blob/main/documentation/IMG_5194.jpg) |
 
 </details>
 
